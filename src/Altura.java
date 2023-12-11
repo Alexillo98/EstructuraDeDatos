@@ -7,6 +7,7 @@ public class Altura
     {
         int cuantos;
         Scanner escaner = new Scanner(System.in);
+        System.out.println("Cuantos alumnos hay;");
         cuantos = escaner.nextInt();
         return cuantos;
     }
@@ -15,8 +16,7 @@ public class Altura
         ArrayList<Float> alturas = new ArrayList<>();
         Scanner escaner = new Scanner(System.in);
         float altura = escaner.nextFloat();
-
-        for (int i = 0; i < numeroAlumnos();i++)
+        for (int i = 0; i < numeroAlumnos(); i++)
         {
             alturas.add(altura);
         }
@@ -30,7 +30,6 @@ public class Altura
             suma += leerAlturas().get(i);
         }
         float media = suma / numeroAlumnos();
-
         return media;
     }
     public static int calcularAlumnosAlturaSuperior()
@@ -59,21 +58,18 @@ public class Altura
         }
         return alturaInferior;
     }
-    public static ArrayList<Float> mostrarResultados(ArrayList<Float> leerAlturas, float media)
+    public static String mostrarResultados()
     {
-        leerAlturas = leerAlturas();
-        media = calcularMedia();
+        ArrayList<Float> alturas = leerAlturas();
+        float media = calcularMedia();
+        int alumnosSup = calcularAlumnosAlturaSuperior();
+        int alumnosInf = calcularAlumnosAlturaInferior();
 
-        System.out.println("Las alturas son : " + leerAlturas());
-        System.out.println("La media de las alturas es " + calcularMedia());
-        System.out.println("Los que miden mas de la media son " + calcularAlumnosAlturaSuperior());
-        System.out.println("Los que miden por debajo de la media son " + calcularAlumnosAlturaInferior());
-
-        return leerAlturas;
+        return alturas + " " + media + " " + alumnosSup + " " + alumnosInf;
     }
     public static void main(String[] args)
     {
 
-        System.out.println(mostrarResultados(leerAlturas(),calcularMedia()));
+        System.out.println(mostrarResultados());
     }
 }
