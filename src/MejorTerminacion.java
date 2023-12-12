@@ -14,16 +14,21 @@ public class MejorTerminacion
 
         ArrayList<String> ultimoDigito = new ArrayList<>();
 
-        Map<ArrayList<String>, Integer> cuantosBoletos = new HashMap<>();
+        Map<String, Integer> cuantosBoletos = new HashMap<>();
 
         for (int i = 0 ; i < numerosBoleto.size() ;i++)
         {
             ultimoDigito.add(String.valueOf(Integer.parseInt(numerosBoleto.get(i))%10));
         }
 
-        for (int i = 0 ; i < 10 ;i++)
+        for (int i = 0 ; i < ultimoDigito.size() ;i++)
         {
-            //if (ultimoDigito.get(i) == i)
+            if(cuantosBoletos.containsKey(ultimoDigito.get(i)))
+            {
+                int numero = cuantosBoletos.get(ultimoDigito.get(i)) + 1;
+                cuantosBoletos.replace(ultimoDigito.get(i),numero);
+            }
+            cuantosBoletos.put(ultimoDigito.get(i), cuantosBoletos.getOrDefault(ultimoDigito.get(i),1));
         }
 
         System.out.println(cuantosBoletos);
