@@ -13,7 +13,7 @@ public class Parentesis
             if (c == '(' || c == '{' || c == '[')
             {
                 caracter.add(c);
-            }else
+            }else if (c == ')' || c == '}' || c == ']')
             {
                 if (caracter.isEmpty()) return false;
                 char ultimo = caracter.pop();
@@ -30,6 +30,6 @@ public class Parentesis
         String parentesisBien = "({[]})";
         String parentesisMal = "({[})";
 
-        System.out.println(parentizado(parentesisBien));
+        System.out.println(parentizado("a"));
     }
 }
