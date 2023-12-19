@@ -23,11 +23,7 @@ public class Anagramas
                 palabras.add(line);
                 anagramas.put(line, palabras);
 
-            }else
-            {
-
             }
-
             System.out.println(anagramas);
         }
         reader.close();

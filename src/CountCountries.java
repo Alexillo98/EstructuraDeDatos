@@ -23,8 +23,8 @@ public class CountCountries
             {
                 if (pertenecen.containsKey(columnasSeparadas[6]))
                 {
-                    int contador = pertenecen.get(columnasSeparadas[6] + 1);
-                    pertenecen.replace(columnasSeparadas[i],contador);
+                    int contador = pertenecen.get(columnasSeparadas[6]) + 1;
+                    pertenecen.replace(columnasSeparadas[6],contador);
                 }else
                 {
                 pertenecen.put(columnasSeparadas[6],pertenecen.getOrDefault(columnasSeparadas[6],1));

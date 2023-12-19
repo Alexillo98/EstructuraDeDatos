@@ -11,6 +11,7 @@ public class MejorTerminacion
         numerosBoleto.add("00004");
         numerosBoleto.add("03847");
         numerosBoleto.add("39804");
+        numerosBoleto.add("39806");
 
         ArrayList<String> ultimoDigito = new ArrayList<>();
 
