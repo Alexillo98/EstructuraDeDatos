@@ -22,23 +22,19 @@ public class LastNameFrequency
             }
         }
 
-        while (true)
-        {
+        while (true) {
             System.out.println("Ingrese un apellido o Enter para salir:");
             String apellido = escaner.nextLine();
 
-            if(apellido.isEmpty())
-            {
+            if (apellido.isEmpty()) {
                 System.out.println("Apellido no valido.");
                 break;
             }
-            String frecuencia =freqApellidos.get(apellido);
+            String frecuencia = freqApellidos.get(apellido);
 
-            if (frecuencia != null)
-            {
+            if (frecuencia != null) {
                 System.out.println("La frecuencia del apellido es " + frecuencia);
-            }else
-            {
+            } else {
                 System.out.println("El apellido no esta en la base de datos.");
             }
         }
