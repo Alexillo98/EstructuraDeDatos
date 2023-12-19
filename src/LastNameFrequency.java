@@ -27,7 +27,7 @@ public class LastNameFrequency
             String apellido = escaner.nextLine();
 
             if (apellido.isEmpty()) {
-                System.out.println("Apellido no valido.");
+                System.out.println("Adios.");
                 break;
             }
             String frecuencia = freqApellidos.get(apellido);
