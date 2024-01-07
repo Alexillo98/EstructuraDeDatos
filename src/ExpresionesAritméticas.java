@@ -5,6 +5,7 @@ public class ExpresionesAritméticas
 {
     public static int calcular (String valores)
     {
+        //Ok
         Stack<Integer> numeros = new Stack<>();
         String[] datos = valores.split(" ");
 
@@ -12,7 +13,8 @@ public class ExpresionesAritméticas
 
         for (int i = 0 ; i < datos.length ;i++)
         {
-            if(Objects.equals(datos[i], "/"))
+           // if(Objects.equals(datos[i], "/"))
+           if (datos[i].equals("/"))
             {
                 n1 = numeros.pop();
                 n2 = numeros.pop();

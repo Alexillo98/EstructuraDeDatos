@@ -6,6 +6,7 @@ public class PaisCapital
 {
     public static void main(String[] args)
     {
+        //OK
         Map<String, String> paisCapital = new HashMap<>();
         paisCapital.put("España","Madrid");
         paisCapital.put("Portugal","Lisboa");
