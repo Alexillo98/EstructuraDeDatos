@@ -7,7 +7,8 @@ public class Anagramas
 {
     public static void main(String[] args) throws IOException
     {
-        BufferedReader reader = new BufferedReader(new FileReader("files/spanish-dict.txt"));
+        //Regular
+        BufferedReader reader = new BufferedReader(new FileReader("./spanish-dict.txt"));
         String line;
         Map<String,List<String>> anagramas = new HashMap<>();
         List<String> palabras = new ArrayList<>();
@@ -23,8 +24,11 @@ public class Anagramas
                 palabras.add(line);
                 anagramas.put(line, palabras);
 
+            }else{
+                ;//Y aquí ho haces nada?
             }
-            System.out.println(anagramas);
+            //No has de imprimir cada vez
+            //System.out.println(anagramas);
         }
         reader.close();
     }

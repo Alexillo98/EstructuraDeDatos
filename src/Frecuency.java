@@ -6,6 +6,7 @@ public class Frecuency
 {
     public static void main(String[] args)
     {
+        //OK
         Scanner escaner = new Scanner(System.in);
         System.out.println("Introduce las palabras:");
         String palabras = escaner.nextLine();
@@ -19,6 +20,7 @@ public class Frecuency
                 int contador = cuantasSeRepiten.get(palabrasSeparadas[i]) + 1;
                 cuantasSeRepiten.replace(palabrasSeparadas[i],contador);
             }
+            //Me gusta cómo lo has resuelto
             cuantasSeRepiten.put(palabrasSeparadas[i], cuantasSeRepiten.getOrDefault(palabrasSeparadas[i],1));
         }
         System.out.println(cuantasSeRepiten);

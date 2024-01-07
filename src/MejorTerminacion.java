@@ -6,6 +6,7 @@ public class MejorTerminacion
 {
     public static void main(String[] args)
     {
+        //OK
         ArrayList<String> numerosBoleto = new ArrayList<>();
 
         numerosBoleto.add("00004");

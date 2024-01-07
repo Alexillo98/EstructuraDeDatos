@@ -9,6 +9,7 @@ public class CountCountries
 {
     public static void main(String[] args) throws IOException
     {
+        //OK
         BufferedReader reader = new BufferedReader(new FileReader("files/Colfuturo-Seleccionados.csv"));
         String line;
         String[] columnasSeparadas;

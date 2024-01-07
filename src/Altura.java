@@ -69,7 +69,7 @@ public class Altura
     }
     public static void main(String[] args)
     {
-
+        //OK
         System.out.println(mostrarResultados());
     }
 }

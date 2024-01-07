@@ -8,6 +8,7 @@ public class Botín
     }
     public static void main(String[] args)
     {
+        //MAL. Falta terminar
         String participantesBilletes = "2,10,20,50,200,500";
     }
 }

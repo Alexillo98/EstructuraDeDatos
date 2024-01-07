@@ -34,6 +34,7 @@ public class RepartiendoRegalos
     }
     public static void main(String[] args)
     {
+        //NO OK. Entra en un bucle infinito
         int[] portales = {3,4,6,1};
 
         System.out.println(reparto(portales[0],portales));

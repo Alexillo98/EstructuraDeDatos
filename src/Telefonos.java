@@ -6,6 +6,7 @@ public class Telefonos
 {
     public static void main(String[] args)
     {
+        //OK
         Map<String,Integer> contactos = new HashMap<>();
 
         contactos.put("Pepe", 642666555);
