@@ -36,10 +36,15 @@ public class Botin
         {
             mapa1.put(i,0);
         }
-
+        int cont = -1;
         for (int i = 0 ; i < participantes ; i++)
         {
-            mapa1.put(i, billetes.get(i));
+            cont++;
+            if (cont > participantes)
+            {
+                cont = 0;
+            }
+            mapa1.put(cont, billetes.get(i));
         }
         return mapa1.toString();
     }
@@ -47,7 +52,12 @@ public class Botin
     public static void main(String[] args)
     {
         String participantesBilletes = "3,10,20,50,200,500";
-
-        System.out.println(repartir(participantes(participantesBilletes),billetes(participantesBilletes)));
+        ArrayList<Integer> billetes = new ArrayList()<>;
+        billetes.add(10);
+        billetes.add(20);
+        billetes.add(50);
+        billetes.add(200);
+        billetes.add(500);
+        System.out.println(repartir(3,billetes));
     }
 }
