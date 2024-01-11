@@ -52,12 +52,7 @@ public class Botin
     public static void main(String[] args)
     {
         String participantesBilletes = "3,10,20,50,200,500";
-        ArrayList<Integer> billetes = new ArrayList()<>;
-        billetes.add(10);
-        billetes.add(20);
-        billetes.add(50);
-        billetes.add(200);
-        billetes.add(500);
+        ArrayList<Integer> billetes = new ArrayList<>(Arrays.asList(10,20,50,200,500));
         System.out.println(repartir(3,billetes));
     }
 }
